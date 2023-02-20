@@ -21,9 +21,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-wrapper").style.top = "0";
+    document.getElementById("primary-header").style.top = "0";
   } else {
-    document.getElementById("nav-wrapper").style.top = "-4.5rem";
+    document.getElementById("primary-header").style.top = "-5rem";
   }
   prevScrollpos = currentScrollPos;
 }
