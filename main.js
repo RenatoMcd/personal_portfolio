@@ -23,7 +23,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("primary-header").style.top = "0";
   } 
-  else if (primaryNav.hasAttribute('data-visible')){
+  else {
     document.getElementById("primary-header").style.top = "-5rem";
   }
   prevScrollpos = currentScrollPos;
