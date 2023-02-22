@@ -12,8 +12,8 @@ navToggle.addEventListener('click', () => {
   closeIcon.classList.toggle('visually-hidden')
 });
 
-$(".primary-navigation > ul > li").click(function(){
-  $(".primary-navigation > ul > li").removeClass("active");
+$(".primary-navigation > ol > li").click(function(){
+  $(".primary-navigation > ol > li").removeClass("active");
   $(this).addClass('active');
 });
 
@@ -22,7 +22,8 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("primary-header").style.top = "0";
-  } else {
+  } 
+  else if (primaryNav.hasAttribute('data-visible')){
     document.getElementById("primary-header").style.top = "-5rem";
   }
   prevScrollpos = currentScrollPos;
