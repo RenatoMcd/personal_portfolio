@@ -3,7 +3,7 @@
     --clr-bg-light: #001D3D;
    
     --clr-primary-400: #C5DCFF;
-    --clr-primary-200: #c5dcffb6;
+    --clr-primary-200: #c5dcffd3;
 
 
     --clr-accent-600: #FFC300;
@@ -190,6 +190,10 @@ footer {
     align-items: center;
     padding-block: var(--size-400);
     margin-inline: auto;
+}
+
+.nav-wrapper img {
+    max-width: 1.5em;
 }
 
 .mobile-nav-toggle {
