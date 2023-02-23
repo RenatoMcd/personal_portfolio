@@ -20,7 +20,7 @@ $(".primary-navigation > ol > li").click(function(){
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos || window.scrollTop <= 0) {
+  if (prevScrollpos > currentScrollPos || window.scrollY <= 0) {
     document.getElementById("primary-header").style.top = "0";
   } 
   else {
