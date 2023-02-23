@@ -14,12 +14,12 @@
     --clr-neutral-100-30: #FFFFFF30;
 
     --ff-primary: "Cambay", sans-serif;
-    --ff-secundary: "IBM Plex Mono", serif;
+    --ff-secondary: "IBM Plex Mono", serif;
 
     --ff-body: var(--ff-primary);
-    --ff-heading: var(--ff-secundary);
-    --ff-button: var(--ff-secundary);
-    --ff-nav: var(--ff-secundary);
+    --ff-heading: var(--ff-secondary);
+    --ff-button: var(--ff-secondary);
+    --ff-nav: var(--ff-secondary);
 
     --fw-regular: 400;
     --fw-medium: 500;
