@@ -178,7 +178,6 @@ footer {
     z-index:10;
     background-color: var(--clr-bg-dark);
     transition: 0.4s;
-    /* border: 1px solid white; */
 }
 
 .nav-wrapper {
@@ -289,7 +288,6 @@ footer {
       padding-top: 5.5em;
     }
   
-  
     .mobile-nav-toggle {
       display: block;
       cursor: pointer;
@@ -306,11 +304,6 @@ footer {
       position: fixed;
       right: 1.5em;
       top: 1em;
-    }
-  
-    .opened {
-      display: block;
-      position: fixed;
     }
   }
 
@@ -336,6 +329,16 @@ footer {
     opacity: .8;
 }
 
+.hero a {
+    color: var(--clr-accent-600);
+}
+
+.hero a:hover {
+    text-shadow: 0 0 10px var(--clr-accent-600);
+    transition: .35s;
+}
+
+
 @media (max-width: 50em){
     .hero {
         margin-top: var(--size-800);
@@ -343,9 +346,14 @@ footer {
 
     .hero-image {
         max-width: 25em;
-        border: 1px solid white;
         margin-inline: auto;
     }
+
+    .hero .socials {
+        text-align: center;
+        margin-bottom: var(--size-400);
+    }
+
 }
 
 /* Projects */
@@ -369,6 +377,13 @@ footer {
     margin-left: var(--size-300);
 }
 
+.projects .tools img {
+    max-height: 20px;
+}
+.projects .tools #flask {
+    max-height: 35px;
+}
+
 .project-img img {
     border-radius: 10px;
 }
@@ -379,6 +394,20 @@ footer {
     float: left;
     cursor: pointer; 
 }
+
+.project-img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--clr-bg-light);
+    opacity: .25;
+    transition: .3s linear;
+    border-radius: 9px;
+    }
 
 @media (min-width: 50em){
     
@@ -446,6 +475,10 @@ footer {
         order: 1;
     }
 
+    .project-item {
+        margin-top: var(--size-800);
+    }
+
     .project-img {
         max-width: 30em;
         margin-inline: auto;
@@ -459,7 +492,6 @@ footer {
     .project-item .tools {
         justify-content: center;
     }
-
 }
 
 
@@ -584,7 +616,8 @@ footer {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
-    border: 0;
+    border: none;
+    outline: none;
 }
 
 .button {
