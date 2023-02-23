@@ -141,6 +141,10 @@ html {
     background-color: var(--clr-bg-dark);
 }
 
+html > * ::selection {
+    background-color: #294953;
+}
+
 body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
@@ -428,11 +432,12 @@ footer {
         right: 0;
         background: var(--clr-bg-light);
         opacity: .8;
-        transition: .3s linear;
+        transition: .35s linear;
         border-radius: 9px;
         }
 
     .project-img:hover:before {
+        pointer-events: none;
         background: none;
     }
 
@@ -637,6 +642,7 @@ footer {
     box-shadow: 0 0 8px var(--clr-accent-600), 
     inset 0 0 8px var(--clr-accent-600);
     background-color: #010f24;
+    cursor: pointer;
 }
 
 .text-primary-400 {
