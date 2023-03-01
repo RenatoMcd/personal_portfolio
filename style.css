@@ -504,7 +504,7 @@ footer {
     }
 
     .project-img:after {
-        content: url(/images/arrow-up-right-from-square-solid.svg);
+        content: url(images/arrow-up-right-from-square-solid.svg);
         position: absolute;
         width: 1rem;
         height: 1rem;
