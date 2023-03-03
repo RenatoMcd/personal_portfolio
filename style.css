@@ -388,8 +388,9 @@ footer {
 .projects .tools img {
     max-height: 20px;
 }
-.projects .tools #flask {
-    max-height: 35px;
+.projects .tools #flask,
+.projects .tools #django {
+    max-width: 40px;
 }
 
 .project-img img {
